@@ -1,0 +1,14 @@
+yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install --no-install-recommends yarn
+
+Expo
+npm install expo-cli --global
+expo --version
+
+yarn create react-app web --template typescript
+yarn start
+yarn react-router-dom
+yarn add @types/react-router-dom -D
+yarn add axios
